@@ -114,6 +114,7 @@ class OneModel { // testable crud and fake flag, heavy work. view-model
             })
             c = rows.length
             console.log("Count Data:", c)
+            cb(c)
          }) 
    }//()
 

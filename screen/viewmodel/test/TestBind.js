@@ -71,10 +71,11 @@ class TestBind {
    }
 
    countData(){
-      this.data.countData();
-      //console.log("povik:",this.data.countData());
-      //console.log("number", number);
-      //$(this.form).find('input[name="countData"]').val(number);
-      
+      this.data.countData(this.onData);      
+   }
+
+   onData(data)
+   {
+      $('.test-div').html('<span class="test">' + data + '</span>');
    }
 }

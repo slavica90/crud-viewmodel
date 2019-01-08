@@ -100,6 +100,7 @@ class OneModel {
             });
             c = rows.length;
             console.log("Count Data:", c);
+            cb(c);
         });
     }
 }
